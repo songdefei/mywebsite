@@ -1,0 +1,65 @@
+/* CSS Document */
+@CHARSET "UTF-8";
+body ,html{
+	margin-left: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	height:100%;
+	width:100%;
+}
+body,td,th {
+	font-size: 22px;
+	font-family: "Microsoft Yahei","黑体","宋体";
+}
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+.swap{
+	width:100%; height:400px; margin:0 auto;position: relative;
+}
+#slider{
+	list-style:none; width:100%; height:100%; margin:0; padding:0;
+}
+#slider li{
+	width:100%; height:400px; display:none; position:absolute;z-index: -1;
+}
+
+#naviSlider{
+	list-style:none;  margin:0 auto; width:auto; text-align:center; margin-top:3px; position: absolute;top: 470px;left: 45%;
+}
+#naviSlider  li{
+	height:12px; width:12px;   cursor:pointer; display:inline-block;
+	background:url(../img/dot.png) -23px center no-repeat;
+	_background:url(../img/dot_ie6.png) -23px center no-repeat;
+	*zoom:1;*display:inline;*margin-left:10px;margin-left: 8px;cursor: pointer;
+
+}
+#naviSlider li.on{
+	background:url(../img/dot.png) left center no-repeat;
+	_background:url(../img/dot_ie6.png) left center no-repeat;margin-left: 10px;
+}
+
+.ruzhu{position: absolute;top: 60px;right: 300px;width: 240px;height: 260px;padding:0px 20px 20px 20px;background-color: #ffffff;}
+.ruzhu input{border: 0;border-bottom:1px solid #cccccc;width: 240px;padding-bottom: 5px;padding-top:15px;color: #666666;font-size: 14px;}
+.ruzhu p{color: #099bde;font-size: 12px;margin-top: 5px;}
+.ruzhu a{width: 240px;height: 44px;background-color: #099bde;text-align: center;display: block;line-height: 44px;font-size: 18px;color: #ffffff;margin-top: 30px;}
+.ruzhu img{position: absolute;right: 20px;top:175px}
+.ruzhu input[type=submit]{width: 240px;height: 44px;background-color: #099bde;display: block;font-size: 18px;color: #ffffff;margin-top: 30px;padding: 8px;}
+.ruzhu .relative{ height: 60px;}
+

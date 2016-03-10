@@ -1,0 +1,111 @@
+body{
+	overflow-x: hidden;
+}
+
+/**
+* common styles
+*/
+.jpage-relative{
+	
+}
+
+
+
+.jpage-panel{
+	margin-bottom: 15px;
+}
+
+/**
+* content styles
+*/
+.block {
+	width:840px;
+}
+
+.title {
+	font-size:16px;
+	color:#f03800;
+}
+
+.date {
+	float:right;
+	color:#440e00;
+}
+
+.like {
+	color:#440e00;
+}
+
+/**
+* list styles
+*/
+.list {
+	/*background: #fff;
+	overflow: hidden;*/
+}
+
+.list .list-item{
+	
+}
+
+.list .img {
+	width:15%;
+	float:left;
+	font-size:0;
+	text-align:center;
+}
+
+.list .img img {
+	max-width:90%;
+}
+
+.list .block {
+	float:right;
+	width:85%;
+}
+
+.list .block p {
+	margin:0;
+	padding:0 15px 5px 0;
+}
+
+.list-item {
+	
+}
+
+/**
+* pagination
+*/
+.jpage-pagination{
+	
+}
+
+.jpage-pagination li{
+	float: left;
+	background: #fff;
+	border: 1px solid #ffffff;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	color: #999999;
+	cursor: pointer;
+	text-align: center;
+	line-height: 28px;
+}
+
+.jpage-pagination li:hover{
+	background: #099bde;
+	border: 1px solid #099bde;
+	outline: 1px solid #fff;
+	color: #ffffff;
+
+}
+
+.jpage-pagination .active,
+.jpage-pagination .active:hover{
+	border: 1px solid #099bde;
+	color: #ffffff;
+	background: #099bde;
+}
+

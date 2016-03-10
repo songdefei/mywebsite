@@ -1,0 +1,14 @@
+label.error {
+    clear: both;
+    float: left;
+    margin-top: 5px;
+    width: 100%;
+    text-align: left;
+    color: #099bde;
+    font-size: 12px;
+    margin-top: 5px;
+    position:absolute;
+    top: 35px;
+    left: 0px;
+}
+input.error{}

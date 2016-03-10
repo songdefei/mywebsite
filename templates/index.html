@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <meta name="author" content="">
+    <script type="text/javascript" charset="utf-8" src="static/js/jquery.jslider.js"></script>
+    <meta charset="utf-8"/><link rel="stylesheet" type="text/css" charset="UTF-8" href="static/css/fullPage.css">
+	<link rel="stylesheet" type="text/css" charset="UTF-8" href="static/css/index.css">
+	<link rel="stylesheet" type="text/css" charset="UTF-8" href="static/css/default.css">
+	<link rel="stylesheet" type="text/css" charset="UTF-8" href="static/css/default.css"/>
+	<link rel="stylesheet" type="text/css" charset="UTF-8" href="static/css/style.css" />
+	<link rel="stylesheet" type="text/css" charset="UTF-8" href="static/css/icorll.css">
+	<link rel="stylesheet" type="text/css" charset="UTF-8" href="static/css/gone.css">
+	<script type="text/javascript" charset="UTF-8" src="static/js/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="static/js/jquery.jslider.js"></script>
+	<script type="text/javascript" charset="utf-8" src="static/js/icorll.js"></script>
+	<script type="text/javascript" charset="utf-8" src="static/js/zzsc.js"></script>
+	<script type="text/javascript" charset="utf-8" src="static/js/lhgdialog.js"></script>
+	<script type="text/javascript" charset="utf-8" src="static/js/pop_up.js"></script>
+	<script type="text/javascript" charset="utf-8" src="static/js/slider1.js"></script>
+	<script type="text/javascript" charset="utf-8" src="static/js/ss.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="static/css/index.css"/>
+    <title>宋德飞的主页</title>
+</head>
+<body>
+    <div class="header">
+        {%if islogin == '1' %}
+        <h1>Welcome ,{{username}}!</h1>
+        {%else%}
+        <h1><a href="/login">{{username}}！</h1>
+        {%endif%}
+        <div class="nav">
+            <ul>
+                <a href="/" class = "a1">首页</a>
+                <a href="/about_myself.html" class = "a1">个人介绍</a>
+                <a href="/login" class = "a1">个人简历</a>
+                <a href="/login" class = "a1">测试博客</a>
+                <a href="/reg" class = "a1">注册</a>
+                <a href="/login" class = "a1">登录</a>
+{#                {%for nav in nav_list%}#}
+                    {#                <li><a href="/mypage.html">{{nav}}</a></li>#}
+{#                    <a href="/reg" class = "a1">{{nav}}</a>#}
+{#                {%endfor%}#}
+        <div id="dowebok">
+			<!--第一屏-->
+         <div id="section1" class="flexslider">
+			<ul class="slides">
+				<li id="myicloud" onclick="window.location='/'">
+					<div class="img" style="text-align: center;"><img src="/static/images/1.jpg" height="600" width="80%" /></div>
+                </li>
+				<li><div class="img" style="text-align: center;"><img src="/static/images/2.jpg" height="600" width="80%" style="background-color:#ffcc00 " /></div>
+				</li>
+				<li>
+					<div class="img" style="text-align: center;"><img src="/static/images/3.jpg" height="600" width="80%" style="background-color:#ffcc00 " /></div>
+				</li>
+				<li>
+					<div class="img" style="text-align: center;"><img src="/static/images/4.jpg" height="600" width="80%" style="background-color:#ffcc00 " /></div>
+				</li>
+				<li>
+					<div class="img" style="text-align: center;"><img src="/static/images/5.jpg" height="600" width="80%" style="background-color:#ffcc00 " /></div>
+				</li>
+				<li>
+					<div class="img" style="text-align: center;"><img src="/static/images/6.jpg" height="600" width="80%" style="background-color:#ffcc00 " /></div>
+				</li>
+			</ul>
+            </div>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item">
+            <h1>{{blog['title']}}</h1>
+            <div class="content">
+                <img src="/static/images/cat.jpg" alt="cat" />
+                <p>{{blog['content']}}</p>
+                <img src="{{img}}" alt="cat" />
+            </div>
+        </div>
+        <div class="side">
+            <ul>
+                {%for key,value in blogtag.items()%}
+{#                    <li>{{key}}({{value}})</li>#}
+                    <li><a href="{{key}}({{value}})">{{key}}({{value}})</a></li>
+                {%endfor%}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
